@@ -38,4 +38,4 @@ The following animation demonstrates the application functionality:
 
 
 ## Grading Requirements
-
+![Webpage](./Assets/webpage.png)

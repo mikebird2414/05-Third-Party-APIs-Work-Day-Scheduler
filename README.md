@@ -1,17 +1,10 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
 # Links:
-Git Resository Link: https://github.com/mikebird2414/04-Web-APIs-Code-Quiz
+Git Resository Link: https://github.com/mikebird2414/05-Third-Party-APIs-Work-Day-Scheduler
 
-Link to Quiz Link: 
+Link to Quiz Link: https://mikebird2414.github.io/05-Third-Party-APIs-Work-Day-Scheduler/
 
-## User Story
-
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
 
 ## Acceptance Criteria
 
@@ -30,7 +23,6 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
-
 
 ## Screenshot 
 ![Webpage](./Assets/webpage.png)

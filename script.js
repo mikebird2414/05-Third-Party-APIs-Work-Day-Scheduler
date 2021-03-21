@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#currentDay").text(moment().format("MMMM Do YYYY"));
 
 
-    //Assign save button click listener for user input and time stamp??
+    //Assign save button click listener for user input and time stamp value
     $(".saveBtn").on("click", function () {
         //get values.
         console.log(this);
@@ -13,7 +13,7 @@ $(document).ready(function () {
         //set items in local storage.
         localStorage.setItem(time, text);
     })
-    //load saved data from local storage 7am - 7pm
+    //get saved data values from local storage by time slots 7am - 7pm
     $("#hour7 .description").val(localStorage.getItem("hour7"));
     $("#hour8 .description").val(localStorage.getItem("hour8"));
     $("#hour9 .description").val(localStorage.getItem("hour9"));
@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 
     function hourTracker() {
-        //current number of hour.
+        //current hour.
         var currentHour = moment().hour();
 
         // loop over time blocks
@@ -38,7 +38,7 @@ $(document).ready(function () {
             var blockHour = parseInt($(this).attr("id").split("hour")[1]);
             console.log( blockHour, currentHour)
 
-            //reviews what hour stamp has passed, is current, or has yet to come
+            //reviews what hour stamp has passed, is current, or has yet to come.
             if (blockHour < currentHour) {
                 $(this).addClass("past");
                 $(this).removeClass("future");
